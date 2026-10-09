@@ -1,0 +1,14 @@
+{
+  "name": "neon-arena",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Browser multiplayer arena with an authoritative Node.js game server",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check server.mjs && node --check engine.mjs && node --check public/app.js && node --test test/*.test.mjs"
+  }
+}
